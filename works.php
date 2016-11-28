@@ -248,16 +248,21 @@
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview design-five arrow-bottom">
+<!-- design-five -->
+    <div class="mainview design-fourth design-five arrow-bottom">
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
           <div class="fogged">
-            <h1 class="design-five--title">хотите увидеть все</h1>
+            <!-- design-five--title -->
+            <h1 class="design-fourth--title">хотите увидеть все</h1>
+            <!-- design-five--subtitle -->
             <h2 class="design-five--subtitle">наши работы?</h2>
-            <h3 class="design-five--thirdtitle">скачайте полный каталог прямо сейчас</h3>
+            <!-- design-five--thirdtitle -->
+            <h5 class="design-fourth--description">скачайте полный каталог прямо сейчас</h3>
             <a href="#" class="btn btn-red">скачать каталог наших работ</a>
-            <h5 class="design-five--description"><span>остались вопросы? задайте их менеджеру</span></h5>
+            <h5 class="design-fourth--fourthtitle">остались вопросы? <a href="#" class="az-btn4">задайте их менеджеру</a></h5>
+            <!-- design-five--description -->
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
@@ -297,6 +302,19 @@
     <div class="modal-c">
       <h5>получите полный каталог</h5>
       <h6>заполните поля ниже и мы вышлем вам полный каталог старинного кирпича</h6>
+      <form action="">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modalbg-manager">
+    <div class="modal-c">
+      <h5>задайте ваш вопрос менеджеру</h5>
+      <h6>заполните поля ниже и наш менеджер ответит вам в ближайшее время</h6>
       <form action="">
         <input type="text" name="email" placeholder="E-mail">
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
