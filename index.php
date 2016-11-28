@@ -13,6 +13,7 @@
 
   <!-- css + javascript -->
   <link rel="stylesheet" href="css/main.css" media="all">
+  <link rel="stylesheet" href="css/style.css" media="all">
 
   <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -52,7 +53,7 @@
           <h2 class="home-first--subtitle">напрямую с мест разбора старинных зданий</h2>
 
           <form method="post" class="red-form">
-            <h6 class="red-form--title">До 30 ноября скидка</h6>
+            <h6 class="red-form--title">До 31 декабря скидка</h6>
             <h6 class="red-form--subtitle">на весь кирпич с клеймом</h6>
             <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
             <input type="hidden" name="name" value="Без имени">
