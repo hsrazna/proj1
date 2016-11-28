@@ -61,35 +61,55 @@
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-2.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-2.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-3.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-3.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-4.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-4.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-5.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-5.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-6.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-6.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-7.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-7.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-8.jpg" alt="">
+              <div class="az-img-box">
+                <div class="az-orange">
+                  <span><strong>место</strong></span>
+                  <span>для Вашего решения</span>
+                  <span><strong>закажите<br>прямо сейчас</strong></span>
+                </div>
+              </div>
               <a href="#" class="btn btn-yellow">оставить заявку</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-9.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-9.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
 
@@ -108,39 +128,57 @@
           <div class="fogged">
 
             <div class="design--item">
-              <img src="img/design--item-10.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-10.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-11.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-11.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-12.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-12.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-13.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-13.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-14.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-14.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-15.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-15.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-16.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-16.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-17.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-17.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-18.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-18.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
 
@@ -159,39 +197,57 @@
           <div class="fogged">
 
             <div class="design--item">
-              <img src="img/design--item-19.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-19.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-20.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-20.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-21.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-21.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-22.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-22.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-23.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-23.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-24.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-24.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-25.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-25.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-26.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-26.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-27.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-27.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
 

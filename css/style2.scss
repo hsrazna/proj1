@@ -27,3 +27,19 @@
 .mainbag{
 	height: unset !important;
 }
+
+.az-orange{
+	width: 250px;
+  height: 150px;
+  background: #F4A731;
+  font-size: 28px;
+  padding-top: 10px;
+  span{
+  	display: block;
+  	font-size: 28px;
+  	strong{
+  		text-transform: uppercase;
+  		font-weight: normal;
+  	}
+  }
+}
