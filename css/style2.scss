@@ -1,0 +1,29 @@
+.az-img-box{
+  width: 250px;
+  height: 150px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #fff;
+  display: inline-block;
+  overflow: hidden;
+  img{
+  	width: 250px;
+    height: 150px;
+    max-width: 100%;
+  	border: none !important;
+  	margin-bottom: 0px !important;
+  	transition: all .5s ease-in-out;
+  }
+  img:hover{
+  	transform: scale(1.1, 1.1);
+  }
+}
+
+// .fogged{
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+// }
+
+.mainbag{
+	height: unset !important;
+}
