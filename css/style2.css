@@ -19,4 +19,17 @@
 .mainbag {
   height: unset !important; }
 
+.az-orange {
+  width: 250px;
+  height: 150px;
+  background: #F4A731;
+  font-size: 28px;
+  padding-top: 10px; }
+  .az-orange span {
+    display: block;
+    font-size: 28px; }
+    .az-orange span strong {
+      text-transform: uppercase;
+      font-weight: normal; }
+
 /*# sourceMappingURL=style2.css.map */
