@@ -14,6 +14,7 @@
   <!-- css + javascript -->
   <link rel="stylesheet" href="css/main.css" media="all">
   <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="stylesheet" href="css/style2.css" media="all">
 
   <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -43,7 +44,7 @@
     <a class="header--phone" href="tel:88002001183">8 800 200 11 83<span>звонок по России бесплатно</span></a>
 
   </header><!-- /header -->
-
+  <div class="ah-bufer"></div>
   <div class="mainbag">
 
     <div class="mainview home-first">
@@ -52,7 +53,7 @@
           <h1 class="home-first--title">подлинный старинный кирпич 18-19 века</h1>
           <h2 class="home-first--subtitle">напрямую с мест разбора старинных зданий</h2>
 
-          <form method="post" class="red-form">
+          <form method="post" class="red-form ah-red-form">
             <h6 class="red-form--title">До 31 декабря скидка</h6>
             <h6 class="red-form--subtitle">на весь кирпич с клеймом</h6>
             <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
@@ -77,10 +78,10 @@
             <img src="img/weoffer-1.jpg" alt="">
             <h2 class="weoffer--title">кирпич старинный ручной формовки</h2>
             <h3 class="weoffer--subtitle">полнотелый, возраст более 100 лет</h3>
-            <ul>
+            <ul class="weoffer-list">
               <li>Длина: 240-285 мм</li>
-              <li>Ширина: 120-135 мм</li>
-              <li>Толщина: 60-80 мм</li>
+              <li>Ширина: 60-80 мм</li>
+              <li>Толщина: от 15 мм</li>
             </ul>
             <a href="#" class="btn btn-red">получить оптовый прайс</a>
           </div><!-- /.weoffer -->
@@ -88,10 +89,10 @@
             <img src="img/weoffer-2.jpg" alt="">
             <h2 class="weoffer--title">кирпич старинный с клеймом</h2>
             <h3 class="weoffer--subtitle">ручной формовки, возраст более 100 лет</h3>
-            <ul>
+            <ul class="weoffer-list">
               <li>Длина: 240-285 мм</li>
-              <li>Ширина: 120-135 мм</li>
-              <li>Толщина: 60-80 мм</li>
+              <li>Ширина: 60-80 мм</li>
+              <li>Толщина: от 15 мм</li>
             </ul>
             <a href="#" class="btn btn-red">получить оптовый прайс</a>
           </div><!-- /.weoffer -->
@@ -99,10 +100,10 @@
             <img src="img/weoffer-3.jpg" alt="">
             <h2 class="weoffer--title">плитка из царского кирпича</h2>
             <h3 class="weoffer--subtitle"></h3>
-            <ul>
+            <ul class="weoffer-list">
               <li>Длина: 240-285 мм</li>
-              <li>Ширина: от 15 мм</li>
-              <li>Толщина: 60-80 мм</li>
+              <li>Ширина: 60-80 мм</li>
+              <li>Толщина: от 15 мм</li>
             </ul>
             <a href="#" class="btn btn-red">получить оптовый прайс</a>
           </div><!-- /.weoffer -->
@@ -249,14 +250,18 @@
             <h4 class="home-seven--fourthtitle">прямо сейчас</h4>
             <h5 class="home-seven--description">загрузите фотографию или  эскиз проекта и мы сообщим примерную стоимость материала за 20 минут</h5>
             <div class="form-container">
-              <img src="img/home-seven-1.png" alt="">
-              <form>
+              <div class="ah-imgbox">
+                <img src="img/home-seven-1.png" alt="">
+              </div>
+              <form class="common-form">
                 <input type="text" name="phone" placeholder="номер телефона">
                 <input type="text" name="file" placeholder="прикрепить файл">
                 <button class="btn btn-red">узнать стоимость</button>
                 <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
               </form>
-              <img src="img/home-seven-2.png" alt="">
+              <div class="ah-imgbox">
+                <img src="img/home-seven-2.png" alt="">
+              </div>
             </div><!-- /.form-container -->
           </div><!-- /.fogged -->
 
