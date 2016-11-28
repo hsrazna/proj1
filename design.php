@@ -13,6 +13,7 @@
 
   <!-- css + javascript -->
   <link rel="stylesheet" href="css/main.css" media="all">
+  <link rel="stylesheet" href="css/style2.css" media="all">
 
   <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -54,7 +55,9 @@
           <div class="fogged">
 
             <div class="design--item">
-              <img src="img/design--item-1.jpg" alt="">
+              <div class="az-img-box">
+                <img src="img/design--item-1.jpg" alt="">
+              </div>
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
