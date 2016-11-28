@@ -4,19 +4,7 @@
   <!-- saved from url=(0014)about:internet -->
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <meta content="user-scalable=yes, maximum-scale=1.6, width=device-width, initial-scale=1, target-densitydpi=device-dpi" name="viewport">
-
-<!-- Meta Responsive -->
-<!-- <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script>
-window.onload = function () {
-    if(screen.width <= 767) {
-        var mvp = document.getElementById('myViewport');
-        mvp.setAttribute('content','width=767');
-    }
-}
-</script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title> </title>
 
@@ -57,11 +45,11 @@ window.onload = function () {
 
   <div class="mainbag">
 
-    <div class="mainview ancient-first">
+    <div class="mainview home-first">
       <div class="vs-center-wrap">
         <div class="vs-center">
-          <h1 class="ancient-first--title">плитка для стиля LOFT</h1>
-          <h2 class="ancient-first--subtitle">из подлинного старинного кирпича 18-19 века</h2>
+          <h1 class="home-first--title">подлинный старинный кирпич 18-19 века</h1>
+          <h2 class="home-first--subtitle">напрямую с мест разбора старинных зданий</h2>
 
           <form method="post" class="red-form">
             <h6 class="red-form--title">До 30 ноября скидка</h6>
@@ -79,138 +67,50 @@ window.onload = function () {
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview ancient-second arrow-bottom">
+    <div class="mainview home-second arrow-bottom">
       <div class="vs-center-wrap">
         <div class="vs-center">
-          <h1 class="ancient-second--title arrow-top">мы предлагаем</h1>
+          <h1 class="home-second--title arrow-top">мы предлагаем</h1>
 
-          <div class="ancient-offer">
-            <span class="ancient-offer--image-t">
-              <img src="img/ancient-offer-1a.jpg" alt="">
-            </span>
-            <h2 class="ancient-offer--title">Элемент ложок<span>(1 класс)</span></h2>
-            <span class="ancient-offer--image-b">
-              <img src="img/ancient-offer-1b.jpg" alt="">
-            </span>
-            <h3 class="ancient-offer--subtitle">Исключительно для стен и фасадов</h3>
-            <h4 class="ancient-offer--descr">на ваш выбор:</h4>
+          <div class="weoffer">
+            <img src="img/weoffer-1.jpg" alt="">
+            <h2 class="weoffer--title">кирпич старинный ручной формовки</h2>
+            <h3 class="weoffer--subtitle">полнотелый, возраст более 100 лет</h3>
             <ul>
-              <li>Длина: 250-270 мм</li>
-              <li>Ширина: 65-70 мм</li>
-              <li>Толщина: 25-40 мм</li>
-              <li>50-52 шт./м2</li>
+              <li>Длина: 240-285 мм</li>
+              <li>Ширина: 120-135 мм</li>
+              <li>Толщина: 60-80 мм</li>
             </ul>
             <a href="#" class="btn btn-red">получить оптовый прайс</a>
-          </div><!-- /.ancient-offer -->
-
-          <div class="ancient-offer">
-            <span class="ancient-offer--image-t">
-              <img src="img/ancient-offer-2a.jpg" alt="">
-            </span>
-            <h2 class="ancient-offer--title">Элемент ложок<span>(2 класс)</span></h2>
-            <span class="ancient-offer--image-b">
-              <img src="img/ancient-offer-2b.jpg" alt="">
-            </span>
-            <h3 class="ancient-offer--subtitle">для стен, фасадов и наполького покрытия</h3>
-            <h4 class="ancient-offer--descr">на ваш выбор:</h4>
+          </div><!-- /.weoffer -->
+          <div class="weoffer">
+            <img src="img/weoffer-2.jpg" alt="">
+            <h2 class="weoffer--title">кирпич старинный с клеймом</h2>
+            <h3 class="weoffer--subtitle">ручной формовки, возраст более 100 лет</h3>
             <ul>
-              <li>Длина: 250-270 мм</li>
-              <li>Ширина: 65-70 мм</li>
-              <li>Толщина: 25-50 мм</li>
-              <li>50-52 шт./м2</li>
+              <li>Длина: 240-285 мм</li>
+              <li>Ширина: 120-135 мм</li>
+              <li>Толщина: 60-80 мм</li>
             </ul>
             <a href="#" class="btn btn-red">получить оптовый прайс</a>
-          </div><!-- /.ancient-offer -->
-
-          <div class="ancient-offer">
-            <span class="ancient-offer--image-t">
-              <img src="img/ancient-offer-3a.jpg" alt="">
-            </span>
-            <h2 class="ancient-offer--title">Элемент тычок</h2>
-            <span class="ancient-offer--image-b">
-              <img src="img/ancient-offer-3b.jpg" alt="">
-            </span>
-            <h3 class="ancient-offer--subtitle">важный элемент для стен и полов</h3>
-            <h4 class="ancient-offer--descr">на ваш выбор:</h4>
+          </div><!-- /.weoffer -->
+          <div class="weoffer">
+            <img src="img/weoffer-3.jpg" alt="">
+            <h2 class="weoffer--title">плитка из царского кирпича</h2>
+            <h3 class="weoffer--subtitle"></h3>
             <ul>
-              <li>Длина: 130-135 мм</li>
-              <li>Ширина: 65-70 мм</li>
-              <li>Толщина: 25-50 мм</li>
-              <li>130-134 шт./м2</li>
+              <li>Длина: 240-285 мм</li>
+              <li>Ширина: от 15 мм</li>
+              <li>Толщина: 60-80 мм</li>
             </ul>
             <a href="#" class="btn btn-red">получить оптовый прайс</a>
-          </div><!-- /.ancient-offer -->
-
-          <div class="ancient-offer">
-            <span class="ancient-offer--image-t">
-              <img src="img/ancient-offer-4a.jpg" alt="">
-            </span>
-            <h2 class="ancient-offer--title">Элемент «уголок»</h2>
-            <span class="ancient-offer--image-b">
-              <img src="img/ancient-offer-4b.jpg" alt="">
-            </span>
-            <h3 class="ancient-offer--subtitle">важный элемент для межкомнатных стен</h3>
-            <h4 class="ancient-offer--descr">на ваш выбор:</h4>
-            <ul>
-              <li>Длина: 250-270 мм</li>
-              <li>Ширина: 130-135 мм</li>
-              <li>Толщина: 25-40 мм</li>
-              <li>13 шт./м2</li>
-            </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
-          </div><!-- /.ancient-offer -->
-
-          <div class="ancient-offer">
-            <span class="ancient-offer--image-t">
-              <img src="img/ancient-offer-5a.jpg" alt="">
-            </span>
-            <h2 class="ancient-offer--title">Элемент «постелька»</h2>
-            <span class="ancient-offer--image-b">
-              <img src="img/ancient-offer-5b.jpg" alt="">
-            </span>
-            <h3 class="ancient-offer--subtitle">важный элемент для композиции стен</h3>
-            <h4 class="ancient-offer--descr">на ваш выбор:</h4>
-            <ul>
-              <li>Длина: 260-270 мм</li>
-              <li>Ширина: 65-70 мм</li>
-              <li>Толщина: 25-40 мм</li>
-              <li>30 шт./м2</li>
-            </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
-          </div><!-- /.ancient-offer -->
-
-        </div><!-- vs-center -->
-      </div><!-- vs-center-wrap -->
-    </div><!-- mainview -->
-    <div class="mainview ancient-third arrow-bottom">
-      <div class="vs-center-wrap">
-        <div class="vs-center">
-          <h1 class="ancient-second--title arrow-top">из какого материала <span>мы делаем для вас стиль <span>LOFT</span>?</span></h1>
-
-          <div class="fogged">
-
-            <h2 class="material-title">старинный кирпич сделан вручную из глины и воды в 19 веке и является уникальным экологически чистым материалом</h2>
-
-            <div class="material-item">
-              <img src="img/material-1.jpg" alt="">
-              <h3 class="material-subtitle">Вручную разбираем частные аварийные дома 19 века</h3>
-            </div><!-- /.material-item -->
-            <div class="material-item">
-              <img src="img/material-2.jpg" alt="">
-              <h3 class="material-subtitle">Вручную отбираем старинный кирпич с клеймом и без клейма</h3>
-            </div><!-- /.material-item -->
-            <div class="material-item">
-              <img src="img/material-3.jpg" alt="">
-              <h3 class="material-subtitle">Пилим разные элементы плитки из старинного кирпича</h3>
-            </div><!-- /.material-item -->
-
-          </div><!-- /.fogger -->
+          </div><!-- /.weoffer -->
 
         </div><!-- vs-center -->
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview ancient-fourth arrow-bottom">
+    <div class="mainview home-third arrow-bottom">
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
@@ -226,37 +126,36 @@ window.onload = function () {
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-
-    <div class="mainview ancient-five">
+    <div class="mainview home-fourth">
       <div class="vs-center-wrap">
         <div class="vs-center">
         <h1 class="home-fourth--title arrow-top">факты о нас</h1>
 
         <div class="home-fourth--facts">
           <span class="facts--image">
-            <img src="img/facts--image-4.jpg" alt="">
+            <img src="img/facts--image-1.png" alt="">
           </span>
           <span class="facts--descr">
             <span class="facts--count">7лет</span>
-            За 7 лет работы продали более 10000м2 плитки из старинного кирпича
+            За 7 лет работы продали более 1000000 кирпичей в 51 регион россии
           </span>
         </div><!-- /.home-fourth--facts -->
         <div class="home-fourth--facts">
           <span class="facts--image">
-            <img src="img/facts--image-5.jpg" alt="">
+            <img src="img/facts--image-2.png" alt="">
           </span>
           <span class="facts--descr">
-            <span class="facts--count">500м2</span>
-            всегда в наличии более 500м2 плитки из старинного кирпича
+            <span class="facts--count">50К</span>
+            всегда в наличии более 50000 кирпичей на нашем складе
           </span>
         </div><!-- /.home-fourth--facts -->
         <div class="home-fourth--facts">
           <span class="facts--image">
-            <img src="img/facts--image-6.jpg" alt="">
+            <img src="img/facts--image-3.png" alt="">
           </span>
           <span class="facts--descr">
-            <span class="facts--count">100<span>проектов</span></span>
-            с помощью нашей плитки было сделано более 100 проектов в стиле <strong>LOFT</strong> по всей России
+            <span class="facts--count">17<span>памятников</span></span>
+            с помощью нашего кирпича было восстановлено 17 памятников архитектуры
           </span>
         </div><!-- /.home-fourth--facts -->
 
@@ -268,16 +167,16 @@ window.onload = function () {
             <h5 class="advantages--description">мы сможем доставить кирпич  в любую точку России и СНГ.</h5>
           </div><!-- /.advantages -->
           <div class="advantages">
-            <h4 class="advantages--title">эксклюзивные камнерезные станки</h4>
-            <h5 class="advantages--description">наши станки собраны на заказ и имеют высокую производительность, благодаря чему, мы можем резать 40-50 м2 плитки в день, вместо недели</h5>
+            <h4 class="advantages--title">мы продаем подлинный старинный кирпич</h4>
+            <h5 class="advantages--description">весь кирпич, продаваемы нами, мы получаем, разбирая старинные здания, возрастом более 100 лет по всей россии.</h5>
           </div><!-- /.advantages -->
           <div class="advantages">
-            <h4 class="advantages--title">собственное производство </h4>
-            <h5 class="advantages--description">мы производим плитку только из подлинного старинного кирпича, который добываем, разбирая старинные здания.</h5>
+            <h4 class="advantages--title">мы сами добываем старинный кирпич</h4>
+            <h5 class="advantages--description">нет наценки перекупщиков.</h5>
           </div><!-- /.advantages -->
           <div class="advantages">
-            <h4 class="advantages--title">оплата любым способом </h4>
-            <h5 class="advantages--description">наличный и безналичный расчет, рассрочка без %.</h5>
+            <h4 class="advantages--title">наш кирпич идеально подходит для изготовления плитки</h4>
+            <h5 class="advantages--description">плитку вы можете заказать у нас или изготовить самостоятельно.</h5>
           </div><!-- /.advantages -->
         </div><!-- /.advantages-container -->
 
@@ -285,7 +184,7 @@ window.onload = function () {
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview ancient-six arrow-bottom">
+    <div class="mainview home-five arrow-bottom">
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
@@ -301,22 +200,44 @@ window.onload = function () {
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview ancient-seven arrow-bottom">
-      <div class="vs-center-wrap arrow-top">
+    <div class="mainview home-six arrow-bottom">
+      <div class="vs-center-wrap">
         <div class="vs-center">
 
+          <h1 class="home-six--title arrow-top">преимущества старинного кирпича 18-19 века</h1>
+
           <div class="fogged">
-            <h1 class="ancient-seven--title">хотите настоящий</h1>
-            <h2 class="ancient-seven--subtitle">стиль <span>LOFT</span></h2>
-            <h3 class="ancient-seven--thirdtitle">плитка из старинного кирпича</h3>
-            <h4 class="ancient-seven--description">— идеальный вариант</h4>
+            <div class="home-six--item">
+              <h5 class="home-six--item-t">подлинность</h5>
+              <h6 class="home-six--item-d">настоящий стиль <span>LOFT</span> только из этого кирпича</h6>
+            </div><!-- /.home-six--item -->
+            <div class="home-six--item">
+              <h5 class="home-six--item-t">ручная работа</h5>
+              <h6 class="home-six--item-d">каждый кирпич неповторим, т.к. создавался вручную</h6>
+            </div><!-- /.home-six--item -->
+            <div class="home-six--item">
+              <h5 class="home-six--item-t">Экологичность</h5>
+              <h6 class="home-six--item-d">глина и вода — весь состав старинного кирпича</h6>
+            </div><!-- /.home-six--item -->
+            <div class="home-six--item">
+              <h5 class="home-six--item-t">уникальность</h5>
+              <h6 class="home-six--item-d">рисунок и фактура созданы самим временем</h6>
+            </div><!-- /.home-six--item -->
+            <div class="home-six--item">
+              <h5 class="home-six--item-t">качество</h5>
+              <h6 class="home-six--item-d">на каждый кирпич наносили клеймо-знак качества конкретного кирпичного завода</h6>
+            </div><!-- /.home-six--item -->
+            <div class="home-six--item">
+              <h5 class="home-six--item-t">прочность</h5>
+              <h6 class="home-six--item-d">характеристики старинного кирпича превосходят современные стандарты кирпича М-150</h6>
+            </div><!-- /.home-six--item -->
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview ancient-eight arrow-bottom">
+    <div class="mainview home-seven arrow-bottom">
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
@@ -342,7 +263,7 @@ window.onload = function () {
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview ancient-nine arrow-bottom">
+    <div class="mainview home-eight arrow-bottom">
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
@@ -360,7 +281,6 @@ window.onload = function () {
     </div><!-- mainview -->
 
   </div><!-- mainbag -->
-
   <div class="modalbg modal-ancient-offer">
     <div class="modal-c">
       <h5>получите полный каталог</h5>
