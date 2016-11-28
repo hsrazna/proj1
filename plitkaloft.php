@@ -25,6 +25,8 @@ window.onload = function () {
 
   <!-- css + javascript -->
   <link rel="stylesheet" href="css/main.css" media="all">
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="stylesheet" href="css/style2.css" media="all">
 
   <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -54,7 +56,7 @@ window.onload = function () {
     <a class="header--phone" href="tel:88002001183">8 800 200 11 83<span>звонок по России бесплатно</span></a>
 
   </header><!-- /header -->
-
+<div class="ah-bufer"></div>
   <div class="mainbag">
 
     <div class="mainview ancient-first">
@@ -63,8 +65,8 @@ window.onload = function () {
           <h1 class="ancient-first--title">плитка для стиля LOFT</h1>
           <h2 class="ancient-first--subtitle">из подлинного старинного кирпича 18-19 века</h2>
 
-          <form method="post" class="red-form">
-            <h6 class="red-form--title">До 30 ноября скидка</h6>
+          <form method="post" class="red-form ah-red-form">
+            <h6 class="red-form--title">До 31 декабря скидка</h6>
             <h6 class="red-form--subtitle">на весь кирпич с клеймом</h6>
             <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
             <input type="hidden" name="name" value="Без имени">

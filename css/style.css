@@ -1,3 +1,17 @@
+.no-gutter {
+  padding-right: 0;
+  padding-left: 0; }
+
+.ah-linkmen {
+  color: #3f312c !important;
+  text-decoration: none !important; }
+
+.ah-linkmen {
+  text-decoration: none !important; }
+
+.home-six--title {
+  top: 0px !important; }
+
 .weoffer {
   margin-right: 50px !important; }
   .weoffer ul {
@@ -57,17 +71,26 @@
 
 .vs-center-wrap:after {
   bottom: none !important;
-  top: 20% !important;
+  top: 17% !important;
   left: 51% !important; }
-
-.vs-center {
-  padding-top: 40px; }
 
 .ah-bufer {
   height: 122px; }
 
+.btn {
+  width: 100% !important; }
+
+.ancient-offer {
+  margin-top: 120px; }
+
 .ah-red-form {
   margin-bottom: 250px; }
+  .ah-red-form input[type="text"] {
+    padding: 0px 20px !important;
+    text-transform: uppercase; }
+
+.home-second {
+  padding-top: 160px !important; }
 
 .home-second--title {
   top: 0px !important; }
@@ -83,12 +106,13 @@
 
 .home-six .fogged {
   margin: 0 auto !important;
-  margin-top: 60px !important;
   margin-bottom: 60px !important;
   height: 693px; }
 
 .arrow-top:before {
   bottom: -47px !important;
+  border-left: 631px solid transparent !important;
+  border-right: 681px solid transparent !important;
   border-top: 40px solid #c74127 !important; }
 
 .advantages-container {
@@ -109,5 +133,31 @@
 
 .home-eight--fourthtitle {
   margin-top: 50px !important; }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .home-third--title, .home-five--title {
+    font-size: 50px !important; }
+
+  .home-fourth--subtitle {
+    font-size: 50px !important;
+    width: 60% !important; }
+
+  .advantages {
+    width: 100% !important; }
+
+  .fogged {
+    padding: 0px !important; } }
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
 
 /*# sourceMappingURL=style.css.map */

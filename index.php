@@ -27,11 +27,9 @@
 <body>
 
   <header role="banner">
-
     <div class="header--logo">
       <img src="img/logo.png" alt="" title="">
-    </div><!-- /logo -->
-
+    </div>
     <nav class="header--nav" role="navigation">
       <ul class="headnav">
         <li><a href="/">старинный<span>кирпич</span></a></li>
@@ -39,11 +37,10 @@
         <li><a href="/design.php">дизайнерские<span>решения (Loft)</span></a></li>
         <li><a href="/works.php">наши<span>работы</span></a></li>
       </ul>
-    </nav><!-- /nav -->
-
+    </nav>
     <a class="header--phone" href="tel:88002001183">8 800 200 11 83<span>звонок по России бесплатно</span></a>
+  </header>
 
-  </header><!-- /header -->
   <div class="ah-bufer"></div>
   <div class="mainbag">
 
@@ -279,7 +276,7 @@
             <h3 class="home-eight--thirdtitle">узнайте стоимость партии с доставкой до порога</h3>
             <a href="#" class="btn btn-red">узнать стоимость</a>
             <h5 class="home-eight--description">остались вопросы?</h5>
-            <h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4>
+            <a href="#" class="ah-linkmen"><h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4></a>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
