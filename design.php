@@ -139,7 +139,7 @@
                       <span><strong>закажите<br>прямо сейчас</strong></span>
                     </div>
                   </div>
-                  <a href="#" class="btn btn-green az-btn3">оставить заявку</a>
+                  <a href="#" class="btn btn-green az-btn2">оставить заявку</a>
                 </div>
                 <div class="design--item">
                   <div class="az-img-box">
@@ -218,7 +218,7 @@
               </div>
               <a href="#" class="btn btn-yellow az-btn2">хочу подобный проект</a>
             </div>
-            <a href="#" class="ah-btnlink1"><span class="btn btn-red ah-btnred1">скачать полный каталог</span></a>
+            <a href="#" class="ah-btnlink1"><span class="btn btn-red ah-btnred1 az-btn1">скачать полный каталог</span></a>
             <!-- <a href="#" class="btn btn-red az-btn1">скачать полный каталог</a> -->
           </div>
 
@@ -287,7 +287,7 @@
               </div>
               <a href="#" class="btn btn-yellow az-btn2">хочу подобный проект</a>
             </div>
-            <a href="#" class="ah-btnlink1"><span class="btn btn-red ah-btnred1">скачать полный каталог</span></a>
+            <a href="#" class="ah-btnlink1"><span class="btn btn-red ah-btnred1 az-btn1">скачать полный каталог</span></a>
             <!-- <a href="#" class="btn btn-red az-btn1">скачать полный каталог</a> -->
           </div><!-- /.fogged -->
 
@@ -304,7 +304,7 @@
             <h2 class="design-fourth--subtitle">дизайнерских решений</h2>
             <h3 class="design-fourth--thirdtitle">в стиле <span>LOFT</span>?</h3>
             <h5 class="design-fourth--description">скачайте полный каталог дизайн-проектов в стиле <span>LOFT</span> из старинного кирпича и плитки прямо сейчас</h5>
-            <a href="#" class="ah-btnlink1"><span class="btn btn-red ah-btnred1">скачать каталог дизайн-проектов</span></a>
+            <a href="#" class="ah-btnlink1"><span class="btn btn-red ah-btnred1 az-btn3">скачать каталог дизайн-проектов</span></a>
             <!-- <a href="#" class="btn btn-red">скачать каталог дизайн-проектов</a> -->
             <h4 class="design-fourth--fourthtitle">остались вопросы? <a href="#" class="az-btn4">задайте их менеджеру</a></h4>
           </div><!-- /.fogged -->
@@ -318,8 +318,9 @@
   <div class="modalbg modal-ancient-offer">
     <div class="modal-c">
       <h5>получите полный каталог</h5>
-      <h6>заполните поля ниже и мы вышлем вам полный каталог старинного кирпича</h6>
+      <h6>заполните поля ниже и мы вышлем вам полный каталог</h6>
       <form method="post">
+        <input type="hidden" name="popup" value="заполните поля ниже и мы вышлем вам полный каталог">
         <input type="text" name="email" placeholder="E-mail">
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
         <button class="btn btn-red">получить полный каталог</button>
@@ -360,6 +361,37 @@
       <h5>задайте ваш вопрос менеджеру</h5>
       <h6>заполните поля ниже и наш менеджер ответит вам в ближайшее время</h6>
       <form action="">
+        <input type="hidden" name="popup" value="заполните поля ниже и наш менеджер ответит вам в ближайшее время">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">задать вопрос</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+  <!-- //////////////////////////////////// -->
+  <div class="modalbg modal-detal-proj">
+    <div class="modal-c">
+      <!-- <h5>получите оптовую цену на плитку из старинного кирпича</h5> -->
+      <h6>введите данные в форму ниже<br>мы свяжемся с вами и обсудим детали вашего проекта</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="введите данные в форму ниже мы свяжемся с вами и обсудим детали вашего проекта">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить оптовую цену</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modal-detal-proj2">
+    <div class="modal-c">
+      <h5>получите полный каталог</h5>
+      <h6>заполните поля ниже и мы вышлем вам полный каталог дизайн-проектов</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="заполните поля ниже и мы вышлем вам полный каталог дизайн-проектов">
         <input type="text" name="email" placeholder="E-mail">
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
         <button class="btn btn-red">получить полный каталог</button>
@@ -368,6 +400,7 @@
       <span class="close"></span>
     </div><!-- /.modal-c -->
   </div><!-- /.modalbg -->
+
 
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>

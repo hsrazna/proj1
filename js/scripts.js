@@ -25,18 +25,19 @@ function FormCheck(e){var t=$(this);console.warn("test2"),console.warn(t),t.chil
 	// 	e.preventDefault(),
 	// 	$(".modal-ancient-offer").css("display","flex")
 	// }),
+	//скачать полный прайс
 	$(".az-btn1").on("click",function(e){
 		e.preventDefault(),
 		$(".modal-ancient-offer").css("display","flex")
 	}),
 	$(".az-btn2").on("click",function(e){
 		e.preventDefault(),
-		$(".modal-ancient-offer").css("display","flex")
+		$(".modal-detal-proj").css("display","flex")
 	}),
-	//скачать полный прайс
+	//дизайн-проекты
 	$(".az-btn3").on("click",function(e){
 		e.preventDefault(),
-		$(".modal-ancient-offer").css("display","flex")
+		$(".modal-detal-proj2").css("display","flex")
 	}),
 	// сообщение менеджеру
 	$(".az-btn4").on("click",function(e){
