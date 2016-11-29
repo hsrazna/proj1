@@ -67,7 +67,7 @@ window.onload = function () {
 
           <form method="post" class="red-form ah-red-form">
             <h6 class="red-form--title">До 31 декабря скидка</h6>
-            <h6 class="red-form--subtitle">на весь кирпич с клеймом</h6>
+            <h6 class="red-form--subtitle">на всю плитку из старинного кирпича</h6>
             <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
             <input type="hidden" name="name" value="Без имени">
             <input type="hidden" name="email" value="hidden@no.email">
@@ -90,7 +90,7 @@ window.onload = function () {
             <span class="ancient-offer--image-t">
               <img src="img/ancient-offer-1a.jpg" alt="">
             </span>
-            <h2 class="ancient-offer--title">Элемент ложок<span>(1 класс)</span></h2>
+            <h2 class="ancient-offer--title">Элемент ложок<span> (1 класс)</span></h2>
             <span class="ancient-offer--image-b">
               <img src="img/ancient-offer-1b.jpg" alt="">
             </span>
@@ -102,14 +102,14 @@ window.onload = function () {
               <li>Толщина: 25-40 мм</li>
               <li>50-52 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
+            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
           </div><!-- /.ancient-offer -->
 
           <div class="ancient-offer">
             <span class="ancient-offer--image-t">
               <img src="img/ancient-offer-2a.jpg" alt="">
             </span>
-            <h2 class="ancient-offer--title">Элемент ложок<span>(2 класс)</span></h2>
+            <h2 class="ancient-offer--title">Элемент ложок<span> (2 класс)</span></h2>
             <span class="ancient-offer--image-b">
               <img src="img/ancient-offer-2b.jpg" alt="">
             </span>
@@ -121,7 +121,7 @@ window.onload = function () {
               <li>Толщина: 25-50 мм</li>
               <li>50-52 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
+            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
           </div><!-- /.ancient-offer -->
 
           <div class="ancient-offer">
@@ -140,7 +140,7 @@ window.onload = function () {
               <li>Толщина: 25-50 мм</li>
               <li>130-134 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
+            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
           </div><!-- /.ancient-offer -->
 
           <div class="ancient-offer">
@@ -159,7 +159,7 @@ window.onload = function () {
               <li>Толщина: 25-40 мм</li>
               <li>13 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
+            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
           </div><!-- /.ancient-offer -->
 
           <div class="ancient-offer">
@@ -178,7 +178,7 @@ window.onload = function () {
               <li>Толщина: 25-40 мм</li>
               <li>30 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
+            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
           </div><!-- /.ancient-offer -->
 
         </div><!-- vs-center -->
@@ -189,7 +189,7 @@ window.onload = function () {
         <div class="vs-center">
           <h1 class="ancient-second--title arrow-top">из какого материала <span>мы делаем для вас стиль <span>LOFT</span>?</span></h1>
 
-          <div class="fogged">
+          <div class="fogged ah-fogged">
 
             <h2 class="material-title">старинный кирпич сделан вручную из глины и воды в 19 веке и является уникальным экологически чистым материалом</h2>
 
@@ -221,7 +221,8 @@ window.onload = function () {
             <h2 class="home-third--subtitle">полный каталог</h2>
             <h3 class="home-third--thirdtitle">старинного кирпича<span>с оптовыми ценами</span></h3>
             <h4 class="home-third--description">ознакомьтесь подробнее с описанием исторической ценности и качества имперского кирпича</h4>
-            <a href="#" class="btn btn-red">скачать полный каталог</a>
+            <a href="#" class="ah-btnlink"><span class="btn btn-red ah-btnred">скачать полный каталог</span></a>
+            <!-- <a href="#" class="btn btn-red">скачать полный каталог</a> -->
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
@@ -233,7 +234,7 @@ window.onload = function () {
       <div class="vs-center-wrap">
         <div class="vs-center">
         <h1 class="home-fourth--title arrow-top">факты о нас</h1>
-
+<div class="ah-mydiv">
         <div class="home-fourth--facts">
           <span class="facts--image">
             <img src="img/facts--image-4.jpg" alt="">
@@ -242,16 +243,16 @@ window.onload = function () {
             <span class="facts--count">7лет</span>
             За 7 лет работы продали более 10000м2 плитки из старинного кирпича
           </span>
-        </div><!-- /.home-fourth--facts -->
+        </div>
         <div class="home-fourth--facts">
           <span class="facts--image">
-            <img src="img/facts--image-5.jpg" alt="">
+            <img src="img/facts--image-5.jpg" class="img-responsive" alt="">
           </span>
           <span class="facts--descr">
             <span class="facts--count">500м2</span>
             всегда в наличии более 500м2 плитки из старинного кирпича
           </span>
-        </div><!-- /.home-fourth--facts -->
+        </div>
         <div class="home-fourth--facts">
           <span class="facts--image">
             <img src="img/facts--image-6.jpg" alt="">
@@ -260,28 +261,28 @@ window.onload = function () {
             <span class="facts--count">100<span>проектов</span></span>
             с помощью нашей плитки было сделано более 100 проектов в стиле <strong>LOFT</strong> по всей России
           </span>
-        </div><!-- /.home-fourth--facts -->
-
+        </div>
+</div>
         <h1 class="home-fourth--subtitle arrow-top">преимущества работы с нами</h1>
 
-        <div class="advantages-container">
-          <div class="advantages">
-            <h4 class="advantages--title">доставка по всей россии и снг</h4>
-            <h5 class="advantages--description">мы сможем доставить кирпич  в любую точку России и СНГ.</h5>
-          </div><!-- /.advantages -->
-          <div class="advantages">
-            <h4 class="advantages--title">эксклюзивные камнерезные станки</h4>
-            <h5 class="advantages--description">наши станки собраны на заказ и имеют высокую производительность, благодаря чему, мы можем резать 40-50 м2 плитки в день, вместо недели</h5>
-          </div><!-- /.advantages -->
-          <div class="advantages">
-            <h4 class="advantages--title">собственное производство </h4>
-            <h5 class="advantages--description">мы производим плитку только из подлинного старинного кирпича, который добываем, разбирая старинные здания.</h5>
-          </div><!-- /.advantages -->
-          <div class="advantages">
-            <h4 class="advantages--title">оплата любым способом </h4>
-            <h5 class="advantages--description">наличный и безналичный расчет, рассрочка без %.</h5>
-          </div><!-- /.advantages -->
-        </div><!-- /.advantages-container -->
+        <div class="advantages-container my-advantages">
+            <div class="advantages">
+              <h4 class="advantages--title">доставка по всей россии и снг</h4>
+              <h5 class="advantages--description">мы сможем доставить кирпич  в любую точку России и СНГ.</h5>
+            </div>
+            <div class="advantages">
+              <h4 class="advantages--title">эксклюзивные камнерезные станки</h4>
+              <h5 class="advantages--description">наши станки собраны на заказ и имеют высокую производительность, благодаря чему, мы можем резать 40-50 м2 плитки в день, вместо недели</h5>
+            </div>
+            <div class="advantages">
+              <h4 class="advantages--title">собственное производство </h4>
+              <h5 class="advantages--description">мы производим плитку только из подлинного старинного кирпича, который добываем, разбирая старинные здания.</h5>
+            </div>
+            <div class="advantages">
+              <h4 class="advantages--title">оплата любым способом </h4>
+              <h5 class="advantages--description">наличный и безналичный расчет, рассрочка без %.</h5>
+            </div>
+        </div>
 
         </div><!-- vs-center -->
       </div><!-- vs-center-wrap -->
