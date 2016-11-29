@@ -38,7 +38,7 @@ function FormCheck(e){var t=$(this);console.warn("test2"),console.warn(t),t.chil
 		e.preventDefault(),
 		$(".modal-ancient-offer").css("display","flex")
 	}),
-	//
+	// сообщение менеджеру
 	$(".az-btn4").on("click",function(e){
 		e.preventDefault(),
 		$(".modalbg-manager").css("display","flex")
@@ -52,6 +52,11 @@ function FormCheck(e){var t=$(this);console.warn("test2"),console.warn(t),t.chil
 	$(".az-btn6").on("click",function(e){
 		e.preventDefault(),
 		$(".modal-star-kirpich2").css("display","flex")
+	}),
+	//узнайте стоимость с доставкой
+	$(".az-btn7").on("click",function(e){
+		e.preventDefault(),
+		$(".modalbg-deliver").css("display","flex")
 	}),
 	// $(".design-second .btn-red").on("click",function(e){
 	// 	e.preventDefault(),
@@ -106,7 +111,7 @@ function FormCheck(e){var t=$(this);console.warn("test2"),console.warn(t),t.chil
 					console.log("Отправляем...")
 				},
 				success:function(e){
-					alert(e);
+					// alert(e);
 					console.log("Ho o o oray, it worked!"),
 					t.parent("").children("h5").fadeOut("fast"),
 					t.parent("").children("h6").fadeOut("fast"),

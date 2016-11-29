@@ -9,11 +9,11 @@ if(isset($_FILES['azfile']['name'])){
   $tel = isset($_POST['phone'])?$_POST['phone']:"";
   // $text = isset($_POST['text'])?$_POST['text']:"";
   // $email2 =  isset($_POST['email'])?(!($_POST['email']==="noemail@noemail.ru")?$_POST['email']:""):"";
-  // $popup =  isset($_POST['popup'])?$_POST['popup']:"";
+  $popup =  isset($_POST['popup'])?$_POST['popup']:"";
 
   $msg  = "<html><body>";
   $msg .= "<h2>Новое сообщение</h2>\r\n";
-  // if($popup!==""){$msg .= "<p><strong>Заявка:</strong> ".$popup."</p>\r\n";}
+  if($popup!==""){$msg .= "<p><strong>Заявка:</strong> ".$popup."</p>\r\n";}
 
   if($tel!==""){$msg .= "<p><strong>Телефон:</strong> ".$tel."</p>\r\n";}
   // // $msg .= "<p><strong>Имя:</strong> ".$uname."</p>\r\n";
@@ -24,11 +24,11 @@ if(isset($_FILES['azfile']['name'])){
   $msg .= "</body></html>";
 
   $email = new PHPMailer();
-  $email->From      = 'you@example.com';//admin@loftkirpich.ru';
-  $email->FromName  = 'Your Name';//loftkirpich';
+  $email->From      = 'admin@loftkirpich.ru';//'you@example.com';//admin@loftkirpich.ru';
+  $email->FromName  = 'loftkirpich';//'Your Name';//loftkirpich';
   $email->Subject   = 'Message Subject';
-  $email->Body      = '3242424243';//$msg;//$bodytext;
-  $email->AddAddress( 'destinationaddress@example.com' );//loftkirpich@yandex.ru' );
+  $email->Body      = $msg;//$bodytext;
+  $email->AddAddress( 'loftkirpich@yandex.ru' );//loftkirpich@yandex.ru' );  destinationaddress@example.com
 
   // $uploaddir = '/uploadfiles/';
 
@@ -337,9 +337,9 @@ if(isset($_FILES['azfile']['name'])){
             <h1 class="home-eight--title">доставим старинный кирпич</h1>
             <h2 class="home-eight--subtitle">в любую точку россии и снг</h2>
             <h3 class="home-eight--thirdtitle">узнайте стоимость партии с доставкой до порога</h3>
-            <a href="#" class="btn btn-red">узнать стоимость</a>
+            <a href="#" class="btn btn-red az-btn7">узнать стоимость</a>
             <h5 class="home-eight--description">остались вопросы?</h5>
-            <a href="#" class="ah-linkmen"><h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4></a>
+            <a href="#" class="ah-linkmen az-btn4"><h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4></a>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
@@ -413,6 +413,38 @@ if(isset($_FILES['azfile']['name'])){
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="НОМЕР ТЕЛЕФОНА">
         <textarea name="text" id="" cols="30" rows="10" class="az-textarea" placeholder="ОБЪЕМ ЗАКАЗА, НАПРИМЕР КИРПИЧ - 7000ШТ ИЛИ S ОБЛИЦОВКИ ИЛИ ОТДЕЛКИ - 150КВ.М."></textarea>
         <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modalbg-manager">
+    <div class="modal-c">
+      <h5>задайте ваш вопрос менеджеру</h5>
+      <h6>заполните поля ниже и наш менеджер ответит вам в ближайшее время</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="заполните поля ниже и наш менеджер ответит вам в ближайшее время">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <textarea name="text" id="" cols="30" rows="10" class="az-textarea" placeholder="ОБЪЕМ ЗАКАЗА, НАПРИМЕР КИРПИЧ - 7000ШТ ИЛИ S ОБЛИЦОВКИ ИЛИ ОТДЕЛКИ - 150КВ.М."></textarea>
+        <button class="btn btn-red">задать вопрос</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modalbg-deliver">
+    <div class="modal-c">
+      <h5>узнайте стоимость с доставкой</h5>
+      <h6>заполните поля ниже и мы сделаем расчет партии материалов с доставкой до вашей двери</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="заполните поля ниже и мы сделаем расчет партии материалов с доставкой до вашей двери">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <textarea name="text" id="" cols="30" rows="10" class="az-textarea" placeholder="ОБЪЕМ ЗАКАЗА, НАПРИМЕР КИРПИЧ - 7000ШТ ИЛИ S ОБЛИЦОВКИ ИЛИ ОТДЕЛКИ - 150КВ.М."></textarea>
+        <button class="btn btn-red">задать вопрос</button>
       </form>
       <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
       <span class="close"></span>
