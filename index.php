@@ -54,9 +54,10 @@
             <h6 class="red-form--title">До 31 декабря скидка</h6>
             <h6 class="red-form--subtitle">на весь кирпич с клеймом</h6>
             <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
-            <input type="hidden" name="name" value="Без имени">
-            <input type="hidden" name="email" value="hidden@no.email">
-            <input type="hidden" name="company" value="noname">
+            <input type="hidden" name="popup" value="До 31 декабря скидка">
+            <!-- <input type="hidden" name="name" value="Без имени"> -->
+            <input type="hidden" name="email" value="noemail@noemail.ru">
+            <!-- <input type="hidden" name="company" value="noname"> -->
             <button>получить скидку</button>
             <span class="discount">30<span>%</span></span>
             <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
@@ -80,7 +81,7 @@
               <li>Ширина: 60-80 мм</li>
               <li>Толщина: от 15 мм</li>
             </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
+            <a href="#" class="btn btn-red az-btn5">получить оптовый прайс</a>
           </div><!-- /.weoffer -->
           <div class="weoffer">
             <img src="img/weoffer-2.jpg" alt="">
@@ -91,7 +92,7 @@
               <li>Ширина: 60-80 мм</li>
               <li>Толщина: от 15 мм</li>
             </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
+            <a href="#" class="btn btn-red az-btn5">получить оптовый прайс</a>
           </div><!-- /.weoffer -->
           <div class="weoffer">
             <img src="img/weoffer-3.jpg" alt="">
@@ -102,7 +103,7 @@
               <li>Ширина: 60-80 мм</li>
               <li>Толщина: от 15 мм</li>
             </ul>
-            <a href="#" class="btn btn-red">получить оптовый прайс</a>
+            <a href="#" class="btn btn-red az-btn5">получить оптовый прайс</a>
           </div><!-- /.weoffer -->
 
         </div><!-- vs-center -->
@@ -118,7 +119,7 @@
             <h2 class="home-third--subtitle">полный каталог</h2>
             <h3 class="home-third--thirdtitle">старинного кирпича<span>с оптовыми ценами</span></h3>
             <h4 class="home-third--description">ознакомьтесь подробнее с описанием исторической ценности и качества имперского кирпича</h4>
-            <a href="#" class="btn btn-red">скачать полный каталог</a>
+            <a href="#" class="btn btn-red az-btn3">скачать полный каталог</a>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
@@ -289,6 +290,7 @@
       <h5>получите полный каталог</h5>
       <h6>заполните поля ниже и мы вышлем вам полный каталог старинного кирпича</h6>
       <form method="post">
+        <input type="hidden" name="popup" value="заполните поля ниже и мы вышлем вам полный каталог старинного кирпича">
         <input type="text" name="email" placeholder="E-mail">
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
         <button class="btn btn-red">получить полный каталог</button>
@@ -320,6 +322,21 @@
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
         <button class="btn btn-red">получить полный каталог</button>
       </form>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modal-star-kirpich">
+    <div class="modal-c">
+      <h5>получите оптовую цену на старинный кирпич</h5>
+      <h6>заполните поля ниже и мы вышлем вам оптовый прайс на старинный кирпич</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="получите оптовую цену на старинный кирпич">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
       <span class="close"></span>
     </div><!-- /.modal-c -->
   </div><!-- /.modalbg -->
