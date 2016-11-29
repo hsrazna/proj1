@@ -70,6 +70,40 @@ if(isset($_FILES['azfile']['name'])){
   <link rel="stylesheet" href="css/style.css" media="all">
   <link rel="stylesheet" href="css/style2.css" media="all">
 
+<!-- Yandex.Metrika counter -->
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter41229074 = new Ya.Metrika({
+                    id:41229074,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/41229074" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- /Yandex.Metrika counter -->
+
+
   <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
@@ -184,7 +218,7 @@ if(isset($_FILES['azfile']['name'])){
       <div class="vs-center-wrap">
         <div class="vs-center">
         <h1 class="home-fourth--title arrow-top">факты о нас</h1>
-
+      <div class="ah-mydiv1">
         <div class="home-fourth--facts">
           <span class="facts--image">
             <img src="img/facts--image-1.png" alt="">
@@ -193,7 +227,7 @@ if(isset($_FILES['azfile']['name'])){
             <span class="facts--count">7лет</span>
             За 7 лет работы продали более 1000000 кирпичей в 51 регион россии
           </span>
-        </div><!-- /.home-fourth--facts -->
+        </div>
         <div class="home-fourth--facts">
           <span class="facts--image">
             <img src="img/facts--image-2.png" alt="">
@@ -202,7 +236,7 @@ if(isset($_FILES['azfile']['name'])){
             <span class="facts--count">50К</span>
             всегда в наличии более 50000 кирпичей на нашем складе
           </span>
-        </div><!-- /.home-fourth--facts -->
+        </div>
         <div class="home-fourth--facts">
           <span class="facts--image">
             <img src="img/facts--image-3.png" alt="">
@@ -211,8 +245,8 @@ if(isset($_FILES['azfile']['name'])){
             <span class="facts--count">17<span>памятников</span></span>
             с помощью нашего кирпича было восстановлено 17 памятников архитектуры
           </span>
-        </div><!-- /.home-fourth--facts -->
-
+        </div>
+      </div>
         <h1 class="home-fourth--subtitle arrow-top">преимущества работы с нами</h1>
 
         <div class="advantages-container">
@@ -454,6 +488,7 @@ if(isset($_FILES['azfile']['name'])){
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <script type="text/javascript" src="js/script2.js"></script>
+  <script type="text/javascript" src="//cdn.callbackhunter.com/cbh.js?hunter_code=4ded0006e342a69b2895dbd88b529c89" charset="UTF-8"></script>
 
 </body>
 </html>
