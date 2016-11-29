@@ -62,4 +62,23 @@
   padding: 0 20px;
   cursor: pointer; }
 
+.az-textarea {
+  font-size: 16px;
+  height: 60px;
+  margin-bottom: 20px;
+  background: #fff;
+  display: block;
+  font-family: "Myriad Pro", sans-serif;
+  resize: none; }
+
+.az-sended {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3f312c; }
+  .az-sended span {
+    font-size: 25px;
+    display: block; }
+
 /*# sourceMappingURL=style2.css.map */

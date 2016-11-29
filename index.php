@@ -1,3 +1,57 @@
+<?php
+require_once('lib/PHPMailer/class.phpmailer.php');
+
+// echo "<br><br><br><br><br><br><br><br><br><br><br><br><br>";
+// print_r($_FILES);
+// $is_uploaded = false;
+if(isset($_FILES['azfile']['name'])){
+  
+  $tel = isset($_POST['phone'])?$_POST['phone']:"";
+  // $text = isset($_POST['text'])?$_POST['text']:"";
+  // $email2 =  isset($_POST['email'])?(!($_POST['email']==="noemail@noemail.ru")?$_POST['email']:""):"";
+  // $popup =  isset($_POST['popup'])?$_POST['popup']:"";
+
+  $msg  = "<html><body>";
+  $msg .= "<h2>Новое сообщение</h2>\r\n";
+  // if($popup!==""){$msg .= "<p><strong>Заявка:</strong> ".$popup."</p>\r\n";}
+
+  if($tel!==""){$msg .= "<p><strong>Телефон:</strong> ".$tel."</p>\r\n";}
+  // // $msg .= "<p><strong>Имя:</strong> ".$uname."</p>\r\n";
+  // if($email2!==""){$msg .= "<p><strong>Email:</strong> ".$email2."</p>\r\n";}
+  // if($text!==""){$msg .= "<p><strong>Сообщение:</strong> ".$text."</p>\r\n";}
+  // // $msg .= "<p><strong>UTM-метка:</strong> ".$utm."</p>\r\n";
+
+  $msg .= "</body></html>";
+
+  $email = new PHPMailer();
+  $email->From      = 'you@example.com';//admin@loftkirpich.ru';
+  $email->FromName  = 'Your Name';//loftkirpich';
+  $email->Subject   = 'Message Subject';
+  $email->Body      = '3242424243';//$msg;//$bodytext;
+  $email->AddAddress( 'destinationaddress@example.com' );//loftkirpich@yandex.ru' );
+
+  // $uploaddir = '/uploadfiles/';
+
+  // $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+  // $file_to_attach = 'PATH_OF_YOUR_FILE_HERE';
+
+  $uploadfile = $_FILES['azfile']['tmp_name'];
+
+  // $email->AddAttachment( $file_to_attach , 'NameOfFile.pdf' );
+  $email->AddAttachment( $uploadfile , $_FILES['azfile']['name'] );
+  // echo $email->Send();
+  if($email->Send()){
+    $is_uploaded = true;
+    // echo "true";
+  } else {
+    // echo "false";
+  }
+  // print_r($_FILES);
+}
+
+
+?>
+
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
@@ -193,7 +247,7 @@
             <h2 class="home-five--subtitle">расчет стоимости партии кирпича</h2>
             <h3 class="home-five--thirdtitle"><span>по SMS</span></h3>
             <h4 class="home-five--description">введите данные в форме ниже и мы пришлем вам расчет стоимости партии кирпича в sms</h4>
-            <a href="#" class="btn btn-red">получить расчет по sms</a>
+            <a href="#" class="btn btn-red az-btn6">получить расчет по sms</a>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
@@ -237,7 +291,7 @@
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview home-seven arrow-bottom">
+    <div class="mainview home-seven arrow-bottom" id="sendfile">
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
@@ -246,17 +300,25 @@
             <h2 class="home-seven--subtitle">узнайте стоимость</h2>
             <h3 class="home-seven--thirdtitle">партии материала для него</h3>
             <h4 class="home-seven--fourthtitle">прямо сейчас</h4>
-            <h5 class="home-seven--description">загрузите фотографию или  эскиз проекта и мы сообщим примерную стоимость материала за 20 минут</h5>
+            <h5 class="home-seven--description">загрузите фотографию или эскиз проекта и мы сообщим примерную стоимость материала за 20 минут</h5>
             <div class="form-container">
               <div class="ah-imgbox">
                 <img src="img/home-seven-1.png" alt="">
               </div>
-              <form class="common-form">
+              <?php //if($is_uploaded): ?>
+              <form class="common-form" enctype="multipart/form-data" action="/#sendfile" method="post">
+              <?php if(!$is_uploaded): ?>
+                <input type="hidden" name="popup" value="загрузите фотографию или эскиз проекта и мы сообщим примерную стоимость материала за 20 минут">
+                <input type="hidden" name="email" placeholder="E-mail" value="noemail@noemail.ru">
                 <input type="text" name="phone" placeholder="номер телефона">
-                <input type="file" name="file" class="az-file" id="az-file"><input class="az-file2" type="text" placeholder="прикрепить файл">
+                <input type="file" name="azfile" class="az-file" id="az-file"><input class="az-file2" type="text" placeholder="прикрепить файл">
                 <button class="btn btn-red">узнать стоимость</button>
-                <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+              <?php else: ?>
+                <!-- form-sended -->
+                <span class="az-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+              <?php endif; ?>
               </form>
+              
               <div class="ah-imgbox">
                 <img src="img/home-seven-2.png" alt="">
               </div>
@@ -334,6 +396,22 @@
         <input type="hidden" name="popup" value="получите оптовую цену на старинный кирпич">
         <input type="text" name="email" placeholder="E-mail">
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modal-star-kirpich2">
+    <div class="modal-c">
+      <h5>получите полный каталог</h5>
+      <h6>заполните поля ниже и мы вышлем вам расчет стоимости партии старинного кирпича по sms</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="заполните поля ниже и мы вышлем вам расчет стоимости партии старинного кирпича по sms">
+        <input type="hidden" name="email" placeholder="E-mail" value="noemail@noemail.ru">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="НОМЕР ТЕЛЕФОНА">
+        <textarea name="text" id="" cols="30" rows="10" class="az-textarea" placeholder="ОБЪЕМ ЗАКАЗА, НАПРИМЕР КИРПИЧ - 7000ШТ ИЛИ S ОБЛИЦОВКИ ИЛИ ОТДЕЛКИ - 150КВ.М."></textarea>
         <button class="btn btn-red">получить полный каталог</button>
       </form>
       <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>

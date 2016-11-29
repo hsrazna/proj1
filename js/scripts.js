@@ -48,6 +48,11 @@ function FormCheck(e){var t=$(this);console.warn("test2"),console.warn(t),t.chil
 		e.preventDefault(),
 		$(".modal-star-kirpich").css("display","flex")
 	}),
+	//заполните поля ниже и мы вышлем вам расчет стоимости партии старинного кирпича по sms
+	$(".az-btn6").on("click",function(e){
+		e.preventDefault(),
+		$(".modal-star-kirpich2").css("display","flex")
+	}),
 	// $(".design-second .btn-red").on("click",function(e){
 	// 	e.preventDefault(),
 	// 	$(".modal-ancient-offer").css("display","flex")
@@ -68,16 +73,16 @@ function FormCheck(e){var t=$(this);console.warn("test2"),console.warn(t),t.chil
 	// 	e.preventDefault(),
 	// 	$(".modal-ancient-offer").css("display","flex")
 	// }),
-	$(".ancient-six .btn").on("click",function(e){
-		e.preventDefault(),
-		$(".modal-ancient-sms").css("display","flex")
-	}),
-	$(".home-five .btn").on("click",function(e){
-		e.preventDefault(),
-		$(".modal-ancient-sms").css("display","flex")
-	}),
-
-	$(".red-form, .form-container form, .modal-c form").on("submit",function(e){
+	// $(".ancient-six .btn").on("click",function(e){
+	// 	e.preventDefault(),
+	// 	$(".modal-ancient-sms").css("display","flex")
+	// }),
+	// $(".home-five .btn").on("click",function(e){
+	// 	e.preventDefault(),
+	// 	$(".modal-ancient-sms").css("display","flex")
+	// }),
+//, .form-container form
+	$(".red-form, .modal-c form").on("submit",function(e){
 		e.preventDefault(),
 		$(this).addClass("current-form");
 		var t=$(this),
@@ -95,16 +100,18 @@ function FormCheck(e){var t=$(this);console.warn("test2"),console.warn(t),t.chil
 			$.ajax({
 				url:"/sendmessage.php",
 				type:"POST",
+				enctype: "multipart/form-data",
 				data: form_data,//o,
 				beforeSend:function(){
 					console.log("Отправляем...")
 				},
 				success:function(e){
-					// alert(e);
+					alert(e);
 					console.log("Ho o o oray, it worked!"),
 					t.parent("").children("h5").fadeOut("fast"),
 					t.parent("").children("h6").fadeOut("fast"),
 					t.children("input").fadeOut("fast"),
+					t.children("textarea").fadeOut("fast"),
 					t.children("button").fadeOut("fast"),
 					t.parent("").find(".form-sended").fadeIn("fast")
 				}
