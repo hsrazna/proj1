@@ -1,6 +1,26 @@
+header {
+  height: unset !important;
+  padding: 20px 0px; }
+
 .no-gutter {
   padding-right: 0;
   padding-left: 0; }
+
+.my-fogged {
+  margin-top: 100px; }
+
+.ah-designitem {
+  margin-top: 70px !important; }
+
+.design--title {
+  padding: 20px 0px !important;
+  font-size: 80px !important; }
+
+.ah-design--title {
+  top: -1px !important; }
+
+.vs-center-wrap:before {
+  top: -1px !important; }
 
 .advantages--title {
   color: #000 !important;
@@ -19,11 +39,33 @@
 .ah-mydiv {
   margin-top: 12%; }
 
+.ah-mydiv1 {
+  margin-top: 6%; }
+
 .ah-btnlink {
-  width: 30%; }
+  width: 30%;
+  margin-left: 0%; }
+
+.ah-btnlink1 {
+  margin-top: 50px;
+  width: 30% !important; }
+
+.ah-btnlink2 {
+  margin-top: 50px !important;
+  width: 30% !important; }
 
 .ah-btnred {
   line-height: 42px !important; }
+
+.ah-btnred1 {
+  line-height: 42px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important; }
+
+.ah-btnred2 {
+  line-height: 15px !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important; }
 
 .ah-fogged {
   margin-top: 70px !important; }
@@ -125,9 +167,6 @@
 .ah-bufer {
   height: 122px; }
 
-.btn {
-  width: 100% !important; }
-
 .ancient-offer {
   margin-top: 120px; }
 
@@ -173,9 +212,6 @@
   padding-top: 15px;
   margin-bottom: 40px !important; }
 
-.btn {
-  width: 386px; }
-
 .home-eight--description {
   margin-top: 50px !important; }
 
@@ -187,6 +223,10 @@
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .ah-btnlink {
+    margin-left: calc(0% - 30%);
+    margin-bottom: 20px; }
+
   .home-third--title, .home-five--title {
     font-size: 50px !important; }
 

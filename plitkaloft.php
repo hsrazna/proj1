@@ -28,6 +28,39 @@ window.onload = function () {
   <link rel="stylesheet" href="css/style.css" media="all">
   <link rel="stylesheet" href="css/style2.css" media="all">
 
+  <!-- Yandex.Metrika counter -->
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter41229074 = new Ya.Metrika({
+                    id:41229074,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/41229074" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- /Yandex.Metrika counter -->
+
   <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
@@ -85,7 +118,7 @@ window.onload = function () {
       <div class="vs-center-wrap">
         <div class="vs-center">
           <h1 class="ancient-second--title arrow-top">мы предлагаем</h1>
-
+        <div class="ah-mydiv1">
           <div class="ancient-offer">
             <span class="ancient-offer--image-t">
               <img src="img/ancient-offer-1a.jpg" alt="">
@@ -102,7 +135,8 @@ window.onload = function () {
               <li>Толщина: 25-40 мм</li>
               <li>50-52 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
+            <a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
 
           <div class="ancient-offer">
@@ -121,7 +155,8 @@ window.onload = function () {
               <li>Толщина: 25-50 мм</li>
               <li>50-52 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
+            <a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
 
           <div class="ancient-offer">
@@ -140,7 +175,8 @@ window.onload = function () {
               <li>Толщина: 25-50 мм</li>
               <li>130-134 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
+            <a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
 
           <div class="ancient-offer">
@@ -159,7 +195,8 @@ window.onload = function () {
               <li>Толщина: 25-40 мм</li>
               <li>13 шт./м2</li>
             </ul>
-            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
+            <a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
 
           <div class="ancient-offer">
@@ -177,10 +214,10 @@ window.onload = function () {
               <li>Ширина: 65-70 мм</li>
               <li>Толщина: 25-40 мм</li>
               <li>30 шт./м2</li>
-            </ul>
-            <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a>
+            </ul><a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
-
+        </div>
         </div><!-- vs-center -->
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
@@ -356,7 +393,7 @@ window.onload = function () {
             <a href="#" class="ah-btnlink"><span class="btn btn-red ah-btnred">узнать стоимость</span></a>
             <!-- <a href="#" class="btn btn-red">узнать стоимость</a> -->
             <h5 class="home-eight--description">остались вопросы?</h5>
-            <a href="#" class="ah-linkmen"><h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4></a>
+            <a href="#" class="az-btn4 ah-linkmen"><h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4></a>
           </div>
 
         </div><!-- vs-center -->
@@ -401,6 +438,20 @@ window.onload = function () {
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
         <button class="btn btn-red">получить полный каталог</button>
       </form>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modalbg-manager">
+    <div class="modal-c">
+      <h5>задайте ваш вопрос менеджеру</h5>
+      <h6>заполните поля ниже и наш менеджер ответит вам в ближайшее время</h6>
+      <form action="">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
       <span class="close"></span>
     </div><!-- /.modal-c -->
   </div><!-- /.modalbg -->
