@@ -13,7 +13,41 @@
 
   <!-- css + javascript -->
   <link rel="stylesheet" href="css/main.css" media="all">
+  <link rel="stylesheet" href="css/style.css" media="all">
   <link rel="stylesheet" href="css/style2.css" media="all">
+
+  <!-- Yandex.Metrika counter -->
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter41229074 = new Ya.Metrika({
+                    id:41229074,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/41229074" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- /Yandex.Metrika counter -->
 
   <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -52,64 +86,65 @@
         <div class="vs-center">
 
           <h1 class="design--title arrow-top">наши работы</h1>
-          <div class="fogged">
+          <div class="my-fogged">
+            <div class="fogged">
 
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-31.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-32.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-33.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-34.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-35.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-36.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-37.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-38.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-            <div class="design--item">
-              <div class="az-img-box">
-                <img src="img/design--item-39.jpg" alt="">
-              </div>
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
-            </div><!-- /.design--item -->
-          </div><!-- /.fogged -->
-
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-31.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-32.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-33.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-34.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-35.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-36.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-37.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-38.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+              <div class="design--item">
+                <div class="az-img-box">
+                  <img src="img/design--item-39.jpg" alt="">
+                </div>
+                <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              </div><!-- /.design--item -->
+            </div>
+          </div>
         </div><!-- vs-center -->
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
@@ -118,7 +153,7 @@
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
-          <h1 class="design--title arrow-top">наши работы</h1>
+          <h1 class="design--title ah-design--title arrow-top">наши работы</h1>
           <div class="fogged">
 
             <div class="design--item">
@@ -185,7 +220,7 @@
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
-          <h1 class="design--title arrow-top">наши работы</h1>
+          <h1 class="design--title ah-design--title arrow-top">наши работы</h1>
           <div class="fogged">
 
             <div class="design--item">
@@ -260,7 +295,8 @@
             <h2 class="design-five--subtitle">наши работы?</h2>
             <!-- design-five--thirdtitle -->
             <h5 class="design-fourth--description">скачайте полный каталог прямо сейчас</h3>
-            <a href="#" class="btn btn-red">скачать каталог наших работ</a>
+            <a href="#" class="ah-btnlink1"><span class="btn btn-red ah-btnred1">скачать каталог наших работ</span></a>
+            <!-- <a href="#" class="btn btn-red">скачать каталог наших работ</a> -->
             <h5 class="design-fourth--fourthtitle">остались вопросы? <a href="#" class="az-btn4">задайте их менеджеру</a></h5>
             <!-- design-five--description -->
           </div><!-- /.fogged -->
