@@ -1,3 +1,57 @@
+<?php
+require_once('lib/PHPMailer/class.phpmailer.php');
+
+// echo "<br><br><br><br><br><br><br><br><br><br><br><br><br>";
+// print_r($_FILES);
+// $is_uploaded = false;
+if(isset($_FILES['azfile']['name'])){
+  
+  $tel = isset($_POST['phone'])?$_POST['phone']:"";
+  // $text = isset($_POST['text'])?$_POST['text']:"";
+  // $email2 =  isset($_POST['email'])?(!($_POST['email']==="noemail@noemail.ru")?$_POST['email']:""):"";
+  $popup =  isset($_POST['popup'])?$_POST['popup']:"";
+
+  $msg  = "<html><body>";
+  $msg .= "<h2>Новое сообщение</h2>\r\n";
+  if($popup!==""){$msg .= "<p><strong>Заявка:</strong> ".$popup."</p>\r\n";}
+
+  if($tel!==""){$msg .= "<p><strong>Телефон:</strong> ".$tel."</p>\r\n";}
+  // // $msg .= "<p><strong>Имя:</strong> ".$uname."</p>\r\n";
+  // if($email2!==""){$msg .= "<p><strong>Email:</strong> ".$email2."</p>\r\n";}
+  // if($text!==""){$msg .= "<p><strong>Сообщение:</strong> ".$text."</p>\r\n";}
+  // // $msg .= "<p><strong>UTM-метка:</strong> ".$utm."</p>\r\n";
+
+  $msg .= "</body></html>";
+
+  $email = new PHPMailer();
+  $email->From      = 'admin@loftkirpich.ru';//'you@example.com';//admin@loftkirpich.ru';
+  $email->FromName  = 'loftkirpich';//'Your Name';//loftkirpich';
+  $email->Subject   = 'Message Subject';
+  $email->Body      = $msg;//$bodytext;
+  $email->AddAddress( 'loftkirpich@yandex.ru' );//loftkirpich@yandex.ru' );  destinationaddress@example.com
+
+  // $uploaddir = '/uploadfiles/';
+
+  // $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+  // $file_to_attach = 'PATH_OF_YOUR_FILE_HERE';
+
+  $uploadfile = $_FILES['azfile']['tmp_name'];
+
+  // $email->AddAttachment( $file_to_attach , 'NameOfFile.pdf' );
+  $email->AddAttachment( $uploadfile , $_FILES['azfile']['name'] );
+  // echo $email->Send();
+  if($email->Send()){
+    $is_uploaded = true;
+    // echo "true";
+  } else {
+    // echo "false";
+  }
+  // print_r($_FILES);
+}
+
+
+?>
+
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
@@ -102,9 +156,11 @@ window.onload = function () {
             <h6 class="red-form--title">До 31 декабря скидка</h6>
             <h6 class="red-form--subtitle">на всю плитку из старинного кирпича</h6>
             <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
-            <input type="hidden" name="name" value="Без имени">
-            <input type="hidden" name="email" value="hidden@no.email">
-            <input type="hidden" name="company" value="noname">
+            <input type="hidden" name="popup" value="До 31 декабря скидка на всю плитку из старинного кирпича">
+            <input type="hidden" name="email" value="noemail@noemail.ru">
+            <!-- <input type="hidden" name="name" value="Без имени"> -->
+            <!-- <input type="hidden" name="email" value="hidden@no.email"> -->
+            <!-- <input type="hidden" name="company" value="noname"> -->
             <button>получить скидку</button>
             <span class="discount">30<span>%</span></span>
             <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
@@ -135,7 +191,7 @@ window.onload = function () {
               <li>Толщина: 25-40 мм</li>
               <li>50-52 шт./м2</li>
             </ul>
-            <a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <a href="#" class="ah-btnlink2 az-btn5"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
             <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
 
@@ -155,7 +211,7 @@ window.onload = function () {
               <li>Толщина: 25-50 мм</li>
               <li>50-52 шт./м2</li>
             </ul>
-            <a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <a href="#" class="ah-btnlink2 az-btn5"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
             <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
 
@@ -175,7 +231,7 @@ window.onload = function () {
               <li>Толщина: 25-50 мм</li>
               <li>130-134 шт./м2</li>
             </ul>
-            <a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <a href="#" class="ah-btnlink2 az-btn5"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
             <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
 
@@ -195,7 +251,7 @@ window.onload = function () {
               <li>Толщина: 25-40 мм</li>
               <li>13 шт./м2</li>
             </ul>
-            <a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            <a href="#" class="ah-btnlink2 az-btn5"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
             <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
 
@@ -214,7 +270,7 @@ window.onload = function () {
               <li>Ширина: 65-70 мм</li>
               <li>Толщина: 25-40 мм</li>
               <li>30 шт./м2</li>
-            </ul><a href="#" class="ah-btnlink2"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
+            </ul><a href="#" class="ah-btnlink2 az-btn5"><span class="btn btn-red ah-btnred2">получить оптовый прайс</span></a>
             <!-- <a href="#" class="btn btn-red ah-btn-red">получить оптовый прайс</a> -->
           </div><!-- /.ancient-offer -->
         </div>
@@ -258,7 +314,7 @@ window.onload = function () {
             <h2 class="home-third--subtitle">полный каталог</h2>
             <h3 class="home-third--thirdtitle">старинного кирпича<span>с оптовыми ценами</span></h3>
             <h4 class="home-third--description">ознакомьтесь подробнее с описанием исторической ценности и качества имперского кирпича</h4>
-            <a href="#" class="ah-btnlink"><span class="btn btn-red ah-btnred">скачать полный каталог</span></a>
+            <a href="#" class="ah-btnlink az-btn3"><span class="btn btn-red ah-btnred">скачать полный каталог</span></a>
             <!-- <a href="#" class="btn btn-red">скачать полный каталог</a> -->
           </div><!-- /.fogged -->
 
@@ -334,7 +390,7 @@ window.onload = function () {
             <h2 class="home-five--subtitle">расчет стоимости партии кирпича</h2>
             <h3 class="home-five--thirdtitle"><span>по SMS</span></h3>
             <h4 class="home-five--description">введите данные в форме ниже и мы пришлем вам расчет стоимости партии кирпича в sms</h4>
-            <a href="#" class="btn btn-red">получить расчет по sms</a>
+            <a href="#" class="btn btn-red az-btn6">получить расчет по sms</a>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
@@ -356,7 +412,7 @@ window.onload = function () {
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview ancient-eight arrow-bottom">
+    <div class="mainview ancient-eight arrow-bottom" id="sendfile">
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
@@ -368,11 +424,17 @@ window.onload = function () {
             <h5 class="home-seven--description">загрузите фотографию или  эскиз проекта и мы сообщим примерную стоимость материала за 20 минут</h5>
             <div class="form-container">
               <img src="img/home-seven-1.png" alt="">
-              <form class="common-form">
+              <form class="common-form" enctype="multipart/form-data" action="/plitkaloft.php#sendfile" method="post">
+                <?php if(!$is_uploaded): ?>
+                <input type="hidden" name="popup" value="загрузите фотографию или эскиз проекта и мы сообщим примерную стоимость материала за 20 минут">
+                <input type="hidden" name="email" placeholder="E-mail" value="noemail@noemail.ru">
                 <input type="text" name="phone" placeholder="номер телефона">
-                <input type="file" name="file" class="az-file" id="az-file"><input class="az-file2" type="text" placeholder="прикрепить файл">
+                <input type="file" name="azfile" class="az-file" id="az-file"><input class="az-file2" type="text" placeholder="прикрепить файл">
                 <button class="btn btn-red">узнать стоимость</button>
-                <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+                <?php else: ?>
+                <!-- <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span> -->
+                <span class="az-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+                <?php endif; ?>
               </form>
               <img src="img/home-seven-2.png" alt="">
             </div><!-- /.form-container -->
@@ -390,7 +452,7 @@ window.onload = function () {
             <h1 class="home-eight--title">доставим старинный кирпич</h1>
             <h2 class="home-eight--subtitle">в любую точку россии и снг</h2>
             <h3 class="home-eight--thirdtitle">узнайте стоимость партии с доставкой до порога</h3>
-            <a href="#" class="ah-btnlink"><span class="btn btn-red ah-btnred">узнать стоимость</span></a>
+            <a href="#" class="ah-btnlink"><span class="btn btn-red ah-btnred az-btn7">узнать стоимость</span></a>
             <!-- <a href="#" class="btn btn-red">узнать стоимость</a> -->
             <h5 class="home-eight--description">остались вопросы?</h5>
             <a href="#" class="az-btn4 ah-linkmen"><h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4></a>
@@ -405,8 +467,9 @@ window.onload = function () {
   <div class="modalbg modal-ancient-offer">
     <div class="modal-c">
       <h5>получите полный каталог</h5>
-      <h6>заполните поля ниже и мы вышлем вам полный каталог старинного кирпича</h6>
+      <h6>заполните поля ниже и мы вышлем вам полный каталог плитки из старинного кирпича</h6>
       <form method="post">
+        <input type="hidden" name="popup" value="заполните поля ниже и мы вышлем вам полный каталог плитки из старинного кирпича">
         <input type="text" name="email" placeholder="E-mail">
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
         <button class="btn btn-red">получить полный каталог</button>
@@ -442,14 +505,65 @@ window.onload = function () {
     </div><!-- /.modal-c -->
   </div><!-- /.modalbg -->
 
+
+<!-- /////////////////////////////////////////////////////// -->
+  <div class="modalbg modal-star-kirpich">
+    <div class="modal-c">
+      <h5>получите оптовую цену на плитку из старинного кирпича</h5>
+      <h6>заполните поля ниже и мы вышлем вам оптовый прайс на плитку из старинного кирпича</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="получите оптовую цену на плитку из старинного кирпича">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить оптовую цену</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modal-star-kirpich2">
+    <div class="modal-c">
+      <h5>получите полный каталог</h5>
+      <h6>заполните поля ниже и мы вышлем вам расчет стоимости партии плитки из старинного кирпича по sms</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="заполните поля ниже и мы вышлем вам расчет стоимости партии плитки из старинного кирпича по sms">
+        <input type="hidden" name="email" placeholder="E-mail" value="noemail@noemail.ru">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="НОМЕР ТЕЛЕФОНА">
+        <textarea name="text" id="" cols="30" rows="10" class="az-textarea" placeholder="ОБЪЕМ ЗАКАЗА, НАПРИМЕР КИРПИЧ - 7000ШТ ИЛИ S ОБЛИЦОВКИ ИЛИ ОТДЕЛКИ - 150КВ.М."></textarea>
+        <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
   <div class="modalbg modalbg-manager">
     <div class="modal-c">
       <h5>задайте ваш вопрос менеджеру</h5>
       <h6>заполните поля ниже и наш менеджер ответит вам в ближайшее время</h6>
       <form action="">
+        <input type="hidden" name="popup" value="заполните поля ниже и наш менеджер ответит вам в ближайшее время">
         <input type="text" name="email" placeholder="E-mail">
         <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
-        <button class="btn btn-red">получить полный каталог</button>
+        <textarea name="text" id="" cols="30" rows="10" class="az-textarea" placeholder="ОБЪЕМ ЗАКАЗА, НАПРИМЕР КИРПИЧ - 7000ШТ ИЛИ S ОБЛИЦОВКИ ИЛИ ОТДЕЛКИ - 150КВ.М."></textarea>
+        <button class="btn btn-red">задать вопрос</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modalbg-deliver">
+    <div class="modal-c">
+      <h5>узнайте стоимость с доставкой</h5>
+      <h6>заполните поля ниже и мы сделаем расчет партии материалов с доставкой до вашей двери</h6>
+      <form action="">
+        <input type="hidden" name="popup" value="заполните поля ниже и мы сделаем расчет партии материалов с доставкой до вашей двери">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <textarea name="text" id="" cols="30" rows="10" class="az-textarea" placeholder="ОБЪЕМ ЗАКАЗА, НАПРИМЕР КИРПИЧ - 7000ШТ ИЛИ S ОБЛИЦОВКИ ИЛИ ОТДЕЛКИ - 150КВ.М."></textarea>
+        <button class="btn btn-red">задать вопрос</button>
       </form>
       <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
       <span class="close"></span>
