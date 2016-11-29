@@ -331,9 +331,9 @@ window.onload = function () {
             <h5 class="home-seven--description">загрузите фотографию или  эскиз проекта и мы сообщим примерную стоимость материала за 20 минут</h5>
             <div class="form-container">
               <img src="img/home-seven-1.png" alt="">
-              <form>
+              <form class="common-form">
                 <input type="text" name="phone" placeholder="номер телефона">
-                <input type="text" name="file" placeholder="прикрепить файл">
+                <input type="file" name="file" class="az-file" id="az-file"><input class="az-file2" type="text" placeholder="прикрепить файл">
                 <button class="btn btn-red">узнать стоимость</button>
                 <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
               </form>
@@ -353,10 +353,11 @@ window.onload = function () {
             <h1 class="home-eight--title">доставим старинный кирпич</h1>
             <h2 class="home-eight--subtitle">в любую точку россии и снг</h2>
             <h3 class="home-eight--thirdtitle">узнайте стоимость партии с доставкой до порога</h3>
-            <a href="#" class="btn btn-red">узнать стоимость</a>
+            <a href="#" class="ah-btnlink"><span class="btn btn-red ah-btnred">узнать стоимость</span></a>
+            <!-- <a href="#" class="btn btn-red">узнать стоимость</a> -->
             <h5 class="home-eight--description">остались вопросы?</h5>
-            <h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4>
-          </div><!-- /.fogged -->
+            <a href="#" class="ah-linkmen"><h4 class="home-eight--fourthtitle"><span>задайте их менеджеру</span></h4></a>
+          </div>
 
         </div><!-- vs-center -->
       </div><!-- vs-center-wrap -->
@@ -406,6 +407,7 @@ window.onload = function () {
 
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/script2.js"></script>
 
 </body>
 </html>
