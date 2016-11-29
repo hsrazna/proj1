@@ -45,4 +45,21 @@
 .design-fourth--fourthtitle a:focus {
   text-decoration: none; }
 
+.az-file {
+  display: none; }
+
+.az-file2 {
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background: #fff;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Myriad Pro", sans-serif;
+  line-height: 40px;
+  text-align: left;
+  padding: 0 20px;
+  cursor: pointer; }
+
 /*# sourceMappingURL=style2.css.map */

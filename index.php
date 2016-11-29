@@ -252,7 +252,7 @@
               </div>
               <form class="common-form">
                 <input type="text" name="phone" placeholder="номер телефона">
-                <input type="text" name="file" placeholder="прикрепить файл">
+                <input type="file" name="file" class="az-file" id="az-file"><input class="az-file2" type="text" placeholder="прикрепить файл">
                 <button class="btn btn-red">узнать стоимость</button>
                 <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
               </form>
@@ -326,6 +326,7 @@
 
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/script2.js"></script>
 
 </body>
 </html>
